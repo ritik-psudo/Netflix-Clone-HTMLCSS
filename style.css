@@ -21,7 +21,7 @@ body {
 .main .box {
     height: 90vh;
     width: 100%;
-    opacity: 0.4;
+    opacity: 0.3;
     background-color: black;
     position: absolute;
     top: 0;
@@ -80,6 +80,20 @@ nav button{
     text-align: center;
 }
 
+@media screen and (max-width: 574px){
+    .hero> :nth-child(1) {
+        font-size: 36px;
+    }
+    
+    .hero> :nth-child(2) {
+        font-size: 20px;
+    }
+    
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    } 
+}
+
 .seperation {
     height: 7px;
     background-color: rgb(37, 37, 37);
@@ -88,6 +102,13 @@ nav button{
     display: flex;
     gap: 10px;
 }
+
+@media screen and (max-width: 574px){
+    .cta {
+        flex-direction: column;
+    }
+}
+
 .btn {
     padding: 10px 20px;
     font-weight: bold;
@@ -139,6 +160,12 @@ nav button{
     color: white;
     gap: 46px;
 }
+
+@media screen and (max-width: 1300px){
+    .section-common {
+        flex-wrap: wrap;
+    }
+}
 .sec-image {
     position: relative;
 }
@@ -153,9 +180,17 @@ nav button{
     transform: translate(-50%, -50%);
 }
 .sec-image img {
-    width: 30vw;
+    width: 555px;
     position: relative;
     z-index: 10;
+}
+
+@media screen and (max-width: 574px){
+    .sec-image img {
+        width: 344px;
+        position: relative;
+        z-index: 10;
+    }
 }
 
 .text {
@@ -172,20 +207,18 @@ nav button{
     font-size: 24px;
 }
 
+@media screen and (max-width: 574px){
+    .text :nth-child(1) {
+        font-size: 36px;
+        text-align: center;
+    }
+    .text :nth-child(2) {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
 .download {
-    /* background-color: black;
-    border: 2px solid rgb(87, 87, 87);
-    border-radius: 10px;
-    padding: 7px 9px;
-    width: 18vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    z-index: 10;
-    left: 18%;
-    bottom: 0;
-    box-shadow: 0px 0px 40px 20px black; */
     position: absolute;
     left: 50%;
     bottom: 1%;
@@ -224,6 +257,15 @@ nav button{
     font-size: 15px;
 }
 
+/* @media screen and (max-width: 574px){
+    .details :nth-child(1) {
+        font-size: 18px;
+    }
+    .details :nth-child(2) {
+        font-size: 10px;
+    }
+} */
+
 .sec-image3 {
     position: relative;
 }
@@ -239,8 +281,16 @@ nav button{
 }
 .sec-image3 img {
     position: relative;
-    width: 30vw;
+    width: 555px;
     z-index: 10;
+}
+
+@media screen and (max-width: 574px){
+    .sec-image3 img {
+        width: 344px;
+        position: relative;
+        z-index: 10;
+    }
 }
 
 .faq {
@@ -256,6 +306,13 @@ nav button{
 .faq> h3 {
     font-size: 48px;
     font-weight: 800;
+}
+
+@media screen and (max-width: 968px){
+    .faq> h3 {
+        font-size: 32px;
+        margin: auto;
+    }  
 }
 
 .faq> span {
@@ -278,6 +335,7 @@ nav button{
     padding: 20px 30px;
     justify-content: space-between;
     margin: auto;
+    cursor: pointer;
     width: 70vw;
 }
 
@@ -286,11 +344,11 @@ nav button{
 }
 
 .question span {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .question img {
-    width: 30px;
+    width: 1.3rem;
 }
 
 .faq input {
@@ -304,31 +362,37 @@ nav button{
 }
 
 footer {
-    color: rgb(170, 170, 170);  
-    max-width: 60vw;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    color: rgb(167, 167, 167);
+    max-width: 70vw;
+    margin: 0 auto;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-footer a{
-    color: rgb(170, 170, 170);
+footer a {
+    color: rgb(167, 167, 167);
 }
 
-footer .contact{
-    padding: 34px 0px;
-}
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.items a {
-    color: rgb(170, 170, 170);
+@media screen and (max-width: 1300px){
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-item {
+        margin: 10px 0px;
+    }
 }
 
-footer .items{
+.footer-item {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1rem;
 }
